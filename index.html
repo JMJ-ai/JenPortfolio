@@ -27,15 +27,15 @@
 
         <div class="header-icons">
           <a target="_blank" href="www.linkedin.com/in/jenifermayangjues">
-            <i class="icon fa fa-linkedin"></i>
+            <i class="icon fa fa-linkedin" aria-hidden="true"></i>
           </a>
           <a target="_blank" href="https://github.com/JMJ-ai">
-            <i class="icon fa fa-github-alt"></i>
+            <i class="icon fa fa-github-alt" aria-hidden="true"></i>
           </a>
           <a target="_blank" href="resume.html">
-            <i class="icon fa fa-file-pdf-o"></i>
+            <i class="icon fa fa-file-pdf-o" aria-hidden="true"></i>
           </a>
-          <a href="mailto:jeniferjues@gmail.com">
+          <a href="mailto:jeniferjues@gmail.com" target="_blank">
             <i class="icon fa fa-envelope"></i>
           </a>
         </div>
@@ -45,6 +45,7 @@
           <a class="link" href="#projects">Projects</a>
         </div>
       </div>
+      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
 
     <!-- ================= ABOUT SECTION ================= -->
@@ -52,7 +53,21 @@
     <section id="about">
       <div class="user-details">
         <h1>About Me</h1>
-
+         <picture>
+          <source
+            type="image/webp"
+            srcset="./assets/img/webp/Professional-Picture-Me.webp"
+            alt="Professional Me"
+            width="20%"
+            style="border-radius: 50%"
+          />
+          <img
+            src="./assets/img/jpg/Professional-Picture-Me.jpg"
+            alt="Professional Me"
+            width="20%"
+            style="border-radius: 50%"
+          />
+        </picture>
         <p>
           I am a data-driven problem solver passionate about leveraging 
           machine learning, statistical modeling, and interactive visualization 
@@ -107,14 +122,25 @@
 
       <!-- Project 1 -->
       <div class="user-projects">
-        <div class="contents">
+        <div class="images-right">
+          <picture>
+            <source type="image/webp" srcset="./assets/img/webp/FIR-img-1.webp" alt="FIR-img-1" />
+            <img alt="Personal Website" src="./assets/img/jpg/FIR-img-1.jpg" />
+           </picture>
+        </div>
+        <div class="contents" style="text-align: center">
           <h3>Predictive Analytics & Forecasting of Food Insecurity Rate in ASEAN</h3>
-
-          <p>
+          <div>
+           <picture>
+            <source type="image/webp" srcset="./assets/img/webp/FIR-img-2.webp" alt="FIR-img-2" />
+            <img alt="Personal Website" src="./assets/img/jpg/FIR-img-2.jpg" />
+           </picture>
+          </div>
+          <p style="text-align: justify">
             An independent extension of my university coursework on predicting 
             food insecurity across ASEAN countries using machine learning.
           </p>
-
+          
           <ul>
             <li>Built Random Forest regression model for prediction</li>
             <li>Implemented time-series forecasting using Prophet</li>
@@ -127,18 +153,29 @@
             decision support system.
           </p>
 
-          <a class="project-link" target="_blank" href="https://github.com/JMJ-ai/Food-Insecurity-Monitoring-in-ASEAN-Country">
-            View Project
+          <a class="project-link" target="_blank" href="https://food-insecurity-monitoring-in-asean-country-kyit5n5p2eegtfqvbh.streamlit.app/">
+            Live demo
           </a>
         </div>
       </div>
 
       <!-- Project 2 -->
       <div class="user-projects">
-        <div class="contents">
+        <div class="images-left">
+          <picture>
+            <source type="image/webp" srcset="./assets/img/webp/TELCO-img-1.webp" alt="TELCO-img-1" />
+            <img alt="Personal Website" src="./assets/img/jpg/TELCO-img-1.jpg" />
+           </picture>
+        </div>
+        <div class="contents-right" style="text-align: center">
           <h3>Telco Churn Analysis & Prediction using TensorFlow</h3>
-
-          <p>
+          <div>
+             <picture>
+            <source type="image/webp" srcset="./assets/img/webp/TELCO-img-2.webp" alt="TELCO-img-2" />
+            <img alt="Personal Website" src="./assets/img/jpg/TELCO-img-2.jpg" />
+           </picture>
+          </div>
+          <p  style="text-align: justify">
             Developed a deep learning-based churn prediction model 
             to identify high-risk telecom customers.
           </p>
@@ -154,18 +191,29 @@
             Enables proactive customer retention strategy through predictive intelligence and support risk assessment.
           </p>
 
-          <a class="project-link" target="_blank" href="https://github.com/JMJ-ai/Telco-Churn-Prediction">
-            View Project
+          <a class="project-link" target="_blank" href="https://telco-churn-prediction-n7yjmrsdrspxmasdqzqmsd.streamlit.app/">
+            Live Demo
           </a>
         </div>
       </div>
 
       <!-- Project 3 -->
       <div class="user-projects">
-        <div class="contents">
+        <div class="images-right">
+           <picture>
+            <source type="image/webp" srcset="./assets/img/webp/CROP-img-1.webp" alt="CROP-img-1" />
+            <img alt="Personal Website" src="./assets/img/jpg/CROP-img-1.jpg" />
+           </picture>
+        </div>
+        <div class="contents" style="text-align: center">
           <h3>Exploratory Analytics of Crop Production in Malaysia</h3>
-
-          <p>
+          <div>
+             <picture>
+            <source type="image/webp" srcset="./assets/img/webp/CROP-img-2.webp" alt="CROP-img-2" />
+            <img alt="Personal Website" src="./assets/img/jpg/CROP-img-2.jpg" />
+           </picture>
+          </div>
+          <p style="text-align: justify">
             An analytical study of Malaysia’s crop production patterns 
             across states and years.
           </p>
@@ -181,8 +229,8 @@
             Supports data-driven agricultural planning.
           </p>
 
-          <a class="project-link" target="_blank" href="https://github.com/JMJ-ai/Exploratory-Crop-Production-Analytic-">
-            View Project
+          <a class="project-link" target="_blank" href="https://3mfctdt2fsjuovkja8auu8.streamlit.app/">
+            Live Demo
           </a>
         </div>
       </div>
@@ -190,10 +238,12 @@
     </section>
 
     <footer class="footer">
-      <p>&copy; 2026 Your Name</p>
+      <p>&copy; 2026 Jenifer M Jues</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/google-analytics.js"></script>
     <script src="./assets/js/main.js"></script>
 
   </body>
