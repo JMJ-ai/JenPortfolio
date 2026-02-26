@@ -9,10 +9,10 @@
     <meta name="author" content="Jenifer M Jues" />
     <meta name="keywords" content="Data Science, Machine Learning, Analytics, Portfolio, Jenifer" />
 
-    <link rel="shortcut icon" href="./assests/img/favicon.ico" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
     <title>Jenifer M Jues | Data Science Portfolio</title>
 
-    <link rel="stylesheet" href="./assests/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
 
   <body>
@@ -54,7 +54,7 @@
       <div class="user-details">
         <h1>About Me</h1>
           <img
-            src="./assests/img/jpg/Profile.jpg"
+            src="./assets/img/jpg/Profile.jpg"
             alt="Professional Me"
             width="20%"
             style="border-radius: 50%"
@@ -81,28 +81,46 @@
         </div>
 
         <!-- Analytics Tools -->
-        <div class="tech">
-          <h2>Data & Analytics</h2>
-          <p>SAS • Weka • Octave • Power BI • Tableau</p>
-          <p>Statistical modeling, BI dashboards & ML experimentation</p>
-        </div>
+       <div class="tech">
+        <h2>Data & Analytics</h2>
+        <div class="tech-icons">
+        <i class="devicon-python-plain colored"></i>
+        <i class="devicon-r-original colored"></i>
+        <i class="devicon-sas-plain colored"></i>
+        <i class="devicon-tensorflow-original colored"></i>
+        <i class="devicon-github-original colored"></i>
+      </div>
+
+  <p>Python • R • SAS • TensorFlow • GitHub</p>
+  <p>Statistical modeling, ML development & analytics workflows</p>
+</div>
 
         <!-- Big Data -->
-        <div class="tech">
-          <h2>Big Data</h2>
-          <p>Apache HBase • Apache Hive</p>
-          <p>Distributed storage & large-scale data processing</p>
-        </div>
+         <div class="tech">
+  <h2>Business Intelligence</h2>
+
+  <div class="tech-icons">
+    <img height="40" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/powerbi.svg" />
+    &nbsp;
+    <img height="40" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tableau.svg" />
+  </div>
+
+  <p>Power BI • Tableau</p>
+  <p>Interactive dashboards & business performance analysis</p>
+</div>
 
         <!-- Development -->
         <div class="tech">
-          <h2>Development Tools</h2>
-          <i class="devicon-github-plain-wordmark colored"></i>
-          <i class="devicon-docker-plain-wordmark colored"></i>
-          <p>Version control & containerization</p>
-        </div>
+  <h2>Big Data</h2>
 
-      </div>
+  <div class="tech-icons">
+    <i class="devicon-apachehadoop-original colored"></i>
+    <i class="devicon-apachespark-original colored"></i>
+  </div>
+
+  <p>Apache Hadoop • Apache Spark</p>
+  <p>Distributed storage & large-scale data processing</p>
+</div>
     </section>
 
     <!-- ================= PROJECTS SECTION ================= -->
@@ -113,119 +131,119 @@
       </div>
 
       <!-- Project 1 -->
+
       <div class="user-projects">
-        <div class="images-right">
-          <picture>
-            <source type="image/webp" srcset="./assests/img/webp/FIR-img-1.webp" alt="FIR-img-1" />
-            <img alt="Personal Website" src="./assests/img/jpg/FIR-img-1.jpg" />
-           </picture>
-        </div>
-        <div class="contents" style="text-align: center">
-          <h3>Predictive Analytics & Forecasting of Food Insecurity Rate in ASEAN</h3>
-          <div>
-           <picture>
-            <source type="image/webp" srcset="./assests/img/webp/FIR-img-2.webp" alt="FIR-img-2" />
-            <img alt="Personal Website" src="./assests/img/jpg/FIR-img-2.jpg" />
-           </picture>
-          </div>
-          <p style="text-align: justify">
-            An independent extension of my university coursework on predicting 
-            food insecurity across ASEAN countries using machine learning.
-          </p>
-          
-          <ul>
-            <li>Built Random Forest regression model for prediction</li>
-            <li>Implemented time-series forecasting using Prophet</li>
-            <li>Developed interactive Streamlit dashboard</li>
-            <li>Integrated geographic and feature importance analysis</li>
-          </ul>
+      <div class="images-right">
+    <picture>
+      <source type="image/webp" srcset="./assets/img/webp/FIR-img-1.webp" />
+      <img alt="Food Insecurity Project" src="./assets/img/jpg/FIR-img-1.jpg" />
+    </picture>
+  </div>
 
-          <p>
-            This project transforms predictive modeling into a policy-oriented 
-            decision support system.
-          </p>
+  <div class="contents" style="text-align: center">
+    <h3>Predictive Analytics & Forecasting of Food Insecurity Rate in ASEAN</h3>
 
-          <a class="project-link" target="_blank" href="https://food-insecurity-monitoring-in-asean-country-kyit5n5p2eegtfqvbh.streamlit.app/">
-            Live demo
-          </a>
-        </div>
-      </div>
+    <!-- Tool Icons -->
+    <div>
+      <img height="32" width="32"
+        src="https://unpkg.com/simple-icons@3.4.0/icons/python.svg" />
+      &nbsp;
+      <img height="32" width="32"
+        src="https://unpkg.com/simple-icons@3.4.0/icons/tableau.svg" />
+      &nbsp;
+      <img height="32" width="32"
+        src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+    </div>
+
+    <p style="text-align: justify">
+      Built a machine learning-based predictive system to model food insecurity
+      trends across ASEAN countries.
+    </p>
+
+    <ul>
+      <li>Random Forest regression modeling</li>
+      <li>Time-series forecasting using Prophet</li>
+      <li>Interactive Streamlit dashboard</li>
+      <li>Feature importance & geographic visualization</li>
+    </ul>
+
+    <a class="project-link" target="_blank"
+      href="https://food-insecurity-monitoring-in-asean-country-kyit5n5p2eegtfqvbh.streamlit.app/">
+      Live Demo
+    </a>
+  </div>
+</div>
 
       <!-- Project 2 -->
       <div class="user-projects">
-        <div class="images-left">
-          <picture>
-            <source type="image/webp" srcset="./assests/img/webp/TELCO-img-1.webp" alt="TELCO-img-1" />
-            <img alt="Personal Website" src="./assests/img/jpg/TELCO-img-1.jpg" />
-           </picture>
-        </div>
-        <div class="contents-right" style="text-align: center">
-          <h3>Telco Churn Analysis & Prediction using TensorFlow</h3>
-          <div>
-             <picture>
-            <source type="image/webp" srcset="./assests/img/webp/TELCO-img-2.webp" alt="TELCO-img-2" />
-            <img alt="Personal Website" src="./assests/img/jpg/TELCO-img-2.jpg" />
-           </picture>
-          </div>
-          <p  style="text-align: justify">
-            Developed a deep learning-based churn prediction model 
-            to identify high-risk telecom customers.
-          </p>
+  <div class="images-left">
+    <picture>
+      <source type="image/webp" srcset="./assets/img/webp/telco.webp" />
+      <img alt="Telco Churn" src="./assets/img/jpg/telco.jpg" />
+    </picture>
+  </div>
 
-          <ul>
-            <li>Conducted EDA and feature engineering</li>
-            <li>Handled class imbalance</li>
-            <li>Built neural network models in TensorFlow</li>
-            <li>Evaluated performance using ROC-AUC & classification metrics</li>
-          </ul>
+  <div class="contents-right" style="text-align: center">
+    <h3>Telco Churn Analysis & Prediction using TensorFlow</h3>
 
-          <p>
-            Enables proactive customer retention strategy through predictive intelligence and support risk assessment.
-          </p>
+    <!-- Tool Icons -->
+    <div>
+      <img height="32" width="32"
+        src="https://unpkg.com/simple-icons@3.4.0/icons/python.svg" />
+      &nbsp;
+      <img height="32" width="32"
+        src="https://unpkg.com/simple-icons@3.4.0/icons/powerbi.svg" />
+      &nbsp;
+      <img height="32" width="32"
+        src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+    </div>
 
-          <a class="project-link" target="_blank" href="https://telco-churn-prediction-n7yjmrsdrspxmasdqzqmsd.streamlit.app/">
-            Live Demo
-          </a>
-        </div>
-      </div>
+    <p style="text-align: justify">
+      Developed a deep learning model using TensorFlow to predict customer churn.
+      Implemented feature engineering, handled class imbalance, and evaluated 
+      performance using ROC-AUC and classification metrics.
+    </p>
+
+    <a class="project-link" target="_blank" href="YOUR_GITHUB_LINK">
+      View Project
+    </a>
+  </div>
+</div>
 
       <!-- Project 3 -->
-      <div class="user-projects">
-        <div class="images-right">
-           <picture>
-            <source type="image/webp" srcset="./assests/img/webp/CROP-img-1.webp" alt="CROP-img-1" />
-            <img alt="Personal Website" src="./assests/img/jpg/CROP-img-1.jpg" />
-           </picture>
-        </div>
-        <div class="contents" style="text-align: center">
-          <h3>Exploratory Analytics of Crop Production in Malaysia</h3>
-          <div>
-             <picture>
-            <source type="image/webp" srcset="./assests/img/webp/CROP-img-2.webp" alt="CROP-img-2" />
-            <img alt="Personal Website" src="./assests/img/jpg/CROP-img-2.jpg" />
-           </picture>
-          </div>
-          <p style="text-align: justify">
-            An analytical study of Malaysia’s crop production patterns 
-            across states and years.
-          </p>
+<div class="user-projects">
+  <div class="images-right">
+    <picture>
+      <source type="image/webp" srcset="./assets/img/webp/crop.webp" />
+      <img alt="Crop Production Malaysia" src="./assets/img/jpg/crop.jpg" />
+    </picture>
+  </div>
 
-          <ul>
-            <li>Identified regional crop specialization</li>
-            <li>Analyzed production volatility trends</li>
-            <li>Applied clustering & regression techniques</li>
-            <li>Built interactive BI dashboards</li>
-          </ul>
+  <div class="contents" style="text-align: center">
+    <h3>Exploratory Analytics of Crop Production in Malaysia</h3>
 
-          <p>
-            Supports data-driven agricultural planning.
-          </p>
+    <!-- Tool Icons -->
+    <div>
+      <img height="32" width="32"
+        src="https://unpkg.com/simple-icons@3.4.0/icons/python.svg" />
+      &nbsp;
+      <img height="32" width="32"
+        src="https://unpkg.com/simple-icons@3.4.0/icons/powerbi.svg" />
+      &nbsp;
+      <img height="32" width="32"
+        src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+    </div>
 
-          <a class="project-link" target="_blank" href="https://3mfctdt2fsjuovkja8auu8.streamlit.app/">
-            Live Demo
-          </a>
-        </div>
-      </div>
+    <p style="text-align: justify">
+      Conducted exploratory data analysis and machine learning on Malaysia’s 
+      agricultural production data to uncover regional specialization and risk patterns.
+    </p>
+
+    <a class="project-link" target="_blank" href="YOUR_GITHUB_LINK">
+      View Project
+    </a>
+  </div>
+</div>
 
     </section>
 
@@ -234,9 +252,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="./assests/js/main.js"></script>
-    <script src="./assests/js/google-analytics.js"></script>
-    <script src="./assests/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/google-analytics.js"></script>
+    <script src="./assets/js/main.js"></script>
 
   </body>
 </html>
