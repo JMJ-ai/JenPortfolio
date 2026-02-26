@@ -6,17 +6,14 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #0a0a0a;
-  color: #e5e5e5;
+  color: #eaeaea;
+  background: #111;
   line-height: 1.6;
 }
 
-.section {
-  padding: 100px 8%;
-}
-
 .container {
-  max-width: 1200px;
+  width: 90%;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -24,27 +21,33 @@ body {
 
 .hero {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  background: #1a1a1a;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   overflow: hidden;
 }
 
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
 .hero-title {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 
 .hero-subtitle {
   margin-top: 20px;
-  color: #aaa;
+  color: #bbb;
 }
 
 .hero-tagline {
   margin-top: 10px;
-  color: #777;
+  color: #888;
 }
 
 .hero-buttons {
@@ -53,62 +56,72 @@ body {
 
 .btn-primary,
 .btn-secondary {
-  padding: 12px 28px;
+  padding: 10px 24px;
   border-radius: 30px;
   text-decoration: none;
-  margin: 10px;
+  margin: 8px;
   transition: 0.3s;
 }
 
 .btn-primary {
-  background: white;
-  color: black;
-}
-
-.btn-primary:hover {
-  background: #ddd;
+  background: #fff;
+  color: #111;
 }
 
 .btn-secondary {
-  border: 1px solid #444;
-  color: #ccc;
+  border: 1px solid #555;
+  color: #ddd;
 }
 
 .btn-secondary:hover {
-  background: #222;
+  background: #333;
+}
+
+.social-icons {
+  margin-top: 25px;
 }
 
 .social-icons a {
-  color: #777;
+  color: #aaa;
   font-size: 22px;
   margin: 0 10px;
+  transition: 0.3s;
 }
 
 .social-icons a:hover {
   color: white;
 }
 
-/* Animated background */
-.animated-bg::before,
-.animated-bg::after {
+/* Floating animated background */
+
+.floating-bg::before,
+.floating-bg::after {
   content: "";
   position: absolute;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(255,255,255,0.05), transparent);
-  animation: float 12s infinite linear;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.06), transparent);
+  border-radius: 50%;
+  animation: float 15s infinite alternate ease-in-out;
 }
 
-.animated-bg::after {
-  animation-direction: reverse;
+.floating-bg::after {
+  left: 60%;
+  top: 40%;
+  animation-delay: 5s;
 }
 
 @keyframes float {
   from { transform: translateY(0px); }
-  to { transform: translateY(-100px); }
+  to { transform: translateY(-60px); }
 }
 
 /* ABOUT */
+
+.about-section {
+  background: #2a2a2a;
+  padding: 100px 0;
+}
 
 .about-container {
   display: flex;
@@ -122,42 +135,27 @@ body {
   border-radius: 50%;
 }
 
-/* TECH STACK */
-
-.tech-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-}
-
-.tech-card {
-  background: #141414;
-  padding: 35px;
-  border-radius: 16px;
-  transition: 0.3s;
-}
-
-.tech-card:hover {
-  background: #1d1d1d;
-  transform: translateY(-8px);
-}
-
-.tech-icons i {
-  font-size: 40px;
-  margin: 10px;
-}
-
 /* PROJECTS */
+
+.project-section {
+  background: #1c1c1c;
+  padding: 100px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
 }
 
 .project-card {
-  background: #141414;
-  border-radius: 16px;
+  background: #262626;
+  border-radius: 12px;
   overflow: hidden;
   transition: 0.3s;
 }
@@ -166,41 +164,47 @@ body {
   transform: translateY(-8px);
 }
 
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .project-content {
   padding: 25px;
 }
 
-.project-tools {
-  margin: 15px 0;
-}
-
 .project-tools i {
-  font-size: 22px;
+  font-size: 20px;
   margin-right: 10px;
 }
 
 .project-buttons {
+  margin-top: 15px;
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .project-btn {
-  padding: 8px 20px;
+  padding: 8px 18px;
   border-radius: 20px;
   background: white;
   color: black;
   text-decoration: none;
+  font-size: 0.9rem;
 }
 
 .project-btn.secondary {
   background: transparent;
-  border: 1px solid #444;
-  color: #ccc;
+  border: 1px solid #555;
+  color: #ddd;
 }
+
+/* FOOTER */
 
 .footer {
   text-align: center;
   padding: 40px;
-  background: #0f0f0f;
+  background: #111;
   color: #777;
 }
