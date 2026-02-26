@@ -150,8 +150,13 @@ body { font-family:'Segoe UI', sans-serif; color:#eaeaea; background:#111; line-
 
 .project-tools i {
   font-size: 20px;
+  width: 20px;
   margin-right: 10px;
   transition: 0.3s ease;
+}
+
+.project-tools img {
+  filter: invert(1);  /* keeps R icon white */
 }
 
 .project-tools i:hover {
