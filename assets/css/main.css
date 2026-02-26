@@ -85,19 +85,112 @@ body { font-family:'Segoe UI', sans-serif; color:#eaeaea; background:#111; line-
 }
 
 /* ---------------- PROJECTS ---------------- */
-.project-section { background:#1c1c1c; padding:100px 0; }
-.section-title { text-align:center; margin-bottom:60px; font-size:2.5rem; }
-.project-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:40px; }
-.project-card { background:#262626; border-radius:12px; overflow:hidden; transition:0.3s; display:flex; flex-direction:column; }
-.project-card:hover { transform:translateY(-8px); }
-.project-card img { width:100%; height:auto; display:block; }
-.project-content { padding:25px; flex:1; display:flex; flex-direction:column; justify-content:space-between; }
-.project-tools i { font-size:20px; margin-right:10px; }
-.project-buttons { margin-top:15px; display:flex; gap:10px; }
-.project-btn { padding:8px 18px; border-radius:20px; background:white; color:black; text-decoration:none; font-size:0.9rem; }
-.project-btn.secondary { background:transparent; border:1px solid #555; color:#ddd; }
-.project-btn:hover { background:#eee; color:#111; }
-.project-btn.secondary:hover { background:#333; color:#fff; }
+
+.project-section {
+  background: #1c1c1c;
+  padding: 100px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 2.5rem;
+}
+
+/* Grid auto scales perfectly */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 40px;
+  align-items: stretch;
+}
+
+/* Card structure */
+.project-card {
+  background: #262626;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Prevent image distortion forever */
+.project-card img {
+  width: 100%;
+  height: 220px;              /* Fixed visual height */
+  object-fit: cover;          /* Prevent stretching */
+  display: block;
+}
+
+/* Content layout control */
+.project-content {
+  padding: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make description take flexible space */
+.project-content p {
+  margin: 15px 0;
+  flex-grow: 1;
+  color: #bbb;
+}
+
+/* Tools section */
+.project-tools {
+  margin-bottom: 15px;
+}
+
+.project-tools i {
+  font-size: 20px;
+  margin-right: 10px;
+  transition: 0.3s ease;
+}
+
+.project-tools i:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+/* Buttons always aligned */
+.project-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;   /* Push buttons to bottom */
+}
+
+.project-btn {
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.project-btn.secondary {
+  background: transparent;
+  border: 1px solid #555;
+  color: #ddd;
+}
+
+.project-btn:hover {
+  background: #eee;
+  color: #111;
+}
+
+.project-btn.secondary:hover {
+  background: #333;
+  color: #fff;
+}
 
 /* ---------------- FOOTER ---------------- */
 .footer { text-align:center; padding:40px; background:#111; color:#777; }
