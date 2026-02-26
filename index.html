@@ -4,12 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Jennie | Data Science Portfolio</title>
-
+  <title>Jenifer | Data Science Portfolio</title>
   <meta name="description" content="Data Science & Analytics Portfolio" />
   <meta name="author" content="Jenifer M Jues" />
 
-  <!-- Main CSS -->
   <link rel="stylesheet" href="./assets/css/main.css" />
 
   <!-- Devicon -->
@@ -22,14 +20,13 @@
 
 <body>
 
-<!-- ================= PREMIUM HEADER ================= -->
+<!-- ================= HERO ================= -->
 
 <section class="hero">
-  <div class="hero-content">
+  <div class="animated-bg"></div>
 
-    <h1 class="hero-title">
-      JENIFER M JUES
-    </h1>
+  <div class="hero-content">
+    <h1 class="hero-title">Jennie</h1>
 
     <h2 class="hero-subtitle">
       Data Scientist • Predictive Analytics Specialist • Machine Learning Engineer
@@ -48,8 +45,8 @@
       <a href="https://github.com/JMJ-ai" target="_blank"><i class="fa fa-github"></i></a>
       <a href="www.linkedin.com/in/jenifermayangjues" target="_blank"><i class="fa fa-linkedin"></i></a>
       <a href="mailto:jeniferjues@gmail.com"><i class="fa fa-envelope"></i></a>
+      <a href="./assets/Resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
     </div>
-
   </div>
 </section>
 
@@ -81,7 +78,6 @@
 
 <section class="section">
   <div class="container">
-
     <h2 class="section-title">Tech Stack</h2>
 
     <div class="tech-grid">
@@ -89,23 +85,23 @@
       <div class="tech-card">
         <h3>Languages</h3>
         <div class="tech-icons">
-          <i class="devicon-python-plain colored"></i>
-          <i class="devicon-r-original colored"></i>
+          <i class="devicon-python-plain"></i>
+          <i class="devicon-r-original"></i>
         </div>
         <p>Python • R</p>
       </div>
 
       <div class="tech-card">
-        <h3>Machine Learning</h3>
+        <h3>ML & AI</h3>
         <div class="tech-icons">
-          <i class="devicon-tensorflow-original colored"></i>
-          <i class="devicon-scikitlearn-plain colored"></i>
+          <i class="devicon-tensorflow-original"></i>
+          <i class="devicon-scikitlearn-plain"></i>
         </div>
         <p>TensorFlow • Scikit-Learn</p>
       </div>
 
       <div class="tech-card">
-        <h3>Data Visualization</h3>
+        <h3>BI Tools</h3>
         <div class="tech-icons">
           <img height="40"
             src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/powerbi.svg">
@@ -118,8 +114,8 @@
       <div class="tech-card">
         <h3>Big Data</h3>
         <div class="tech-icons">
-          <i class="devicon-apachehadoop-original colored"></i>
-          <i class="devicon-apachespark-original colored"></i>
+          <i class="devicon-apachehadoop-original"></i>
+          <i class="devicon-apachespark-original"></i>
         </div>
         <p>Hadoop • Spark</p>
       </div>
@@ -132,45 +128,75 @@
 
 <section id="projects" class="section">
   <div class="container">
-
     <h2 class="section-title">Featured Projects</h2>
 
     <div class="project-grid">
 
       <!-- Project 1 -->
       <div class="project-card">
-        <img src="./assets/img/jpg/FIR-img-1.jpg" alt="Food Insecurity">
+        <img src="./assets/img/jpg/FIR-img-1.jpg" alt="">
         <div class="project-content">
           <h3>Food Insecurity Predictive System</h3>
-          <p>
-            Random Forest & Prophet forecasting system modeling ASEAN food insecurity
-            trends with interactive dashboard.
-          </p>
-          <a href="YOUR_LINK" class="project-btn" target="_blank">Live Demo</a>
+          <p>Random Forest & Prophet forecasting for ASEAN food insecurity trends.</p>
+
+          <div class="project-tools">
+            <i class="devicon-python-plain"></i>
+            <i class="devicon-streamlit-plain"></i>
+            <img height="22"
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tableau.svg">
+            <i class="devicon-github-original"></i>
+          </div>
+
+          <div class="project-buttons">
+            <a href="https://food-insecurity-monitoring-in-asean-country-kyit5n5p2eegtfqvbh.streamlit.app/" target="_blank" class="project-btn">Live Demo</a>
+            <a href="https://github.com/JMJ-ai/Food-Insecurity-Monitoring-in-ASEAN-Country" target="_blank" class="project-btn secondary">
+              GitHub
+            </a>
+          </div>
         </div>
       </div>
 
       <!-- Project 2 -->
       <div class="project-card">
-        <img src="./assets/img/jpg/TELCO-img-1.jpg" alt="Telco Churn">
+        <img src="./assets/img/jpg/TELCO-img-1.jpg" alt="">
         <div class="project-content">
-          <h3>Telco Churn Prediction (TensorFlow)</h3>
-          <p>
-            Deep learning classification system with class imbalance handling and ROC-AUC evaluation.
-          </p>
-          <a href="YOUR_LINK" class="project-btn" target="_blank">View Project</a>
+          <h3>Telco Churn Prediction</h3>
+          <p>Deep learning classification system with Risk Segmentation by CLustering Tchnique.</p>
+
+          <div class="project-tools">
+            <i class="devicon-python-plain"></i>
+            <i class="devicon-tensorflow-original"></i>
+            <img height="22"
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/powerbi.svg">
+            <i class="devicon-github-original"></i>
+          </div>
+
+          <div class="project-buttons">
+            <a href="https://telco-churn-prediction-n7yjmrsdrspxmasdqzqmsd.streamlit.app/" class="project-btn">Live Demo</a>
+            <a href="https://github.com/JMJ-ai/Telco-Churn-Prediction" class="project-btn secondary">GitHub</a>
+          </div>
         </div>
       </div>
 
       <!-- Project 3 -->
       <div class="project-card">
-        <img src="./assets/img/jpg/CROP-img-1.jpg" alt="Crop Analytics">
+        <img src="./assets/img/jpg/CROP-img-1.jpg" alt="">
         <div class="project-content">
-          <h3>Crop Production Analytics Malaysia</h3>
-          <p>
-            Exploratory data analysis and regional agricultural pattern modeling.
-          </p>
-          <a href="YOUR_LINK" class="project-btn" target="_blank">View Project</a>
+          <h3>Crop Production Analytics</h3>
+          <p>Exploratory data analysis of Malaysian agricultural production.</p>
+
+          <div class="project-tools">
+            <i class="devicon-python-plain"></i>
+            <i class="devicon-streamlit-plain"></i>
+            <img height="22"
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/powerbi.svg">
+            <i class="devicon-github-original"></i>
+          </div>
+
+          <div class="project-buttons">
+            <a href="https://3mfctdt2fsjuovkja8auu8.streamlit.app/" class="project-btn">Live Demo</a>
+            <a href="https://github.com/JMJ-ai/Exploratory-Crop-Production-Analytic-" class="project-btn secondary">GitHub</a>
+          </div>
         </div>
       </div>
 
