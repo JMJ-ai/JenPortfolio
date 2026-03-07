@@ -260,8 +260,8 @@ body { font-family:'Segoe UI', sans-serif; color:#FFFFFF; background:#111; line-
 
 /* Specific class for Power BI */
 .powerbi {
-  -webkit-mask-image: url('https://img.icons8.com/?size=100&id=FQ9NVJuXbDIv&format=png&color=#FFFFFF');
-  mask-image: url('https://img.icons8.com/?size=100&id=FQ9NVJuXbDIv&format=png&color=#FFFFFF');
+  -webkit-mask-image: url('https://img.icons8.com/?size=100&id=XZfQhFwZm1qP&format=png&color=#FFFFFF');
+  mask-image: url('https://img.icons8.com/?size=100&id=XZfQhFwZm1qP&format=png&color=#FFFFFF');
 }
 
 /* Tableau specific class */
