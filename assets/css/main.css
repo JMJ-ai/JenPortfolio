@@ -145,6 +145,8 @@ body { font-family:'Segoe UI', sans-serif; color:#FFFFFF; background:#111; line-
 
 /* Tools section */
 .project-tools {
+  display: flex;
+  gap:12px
   margin-bottom: 15px;
 }
 
@@ -232,14 +234,14 @@ body { font-family:'Segoe UI', sans-serif; color:#FFFFFF; background:#111; line-
 }
 
 .tool-icon {
-  width: auto;
-  height: 1.5em;
-  font-size: 1.5em;
-}
-
-img.tool-icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 1
   object-fit: contain;
 }
+
+
 
 /* ---------------- FOOTER ---------------- */
 .footer { text-align:center; padding:40px; background:#111; color:#777; }
