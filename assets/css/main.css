@@ -241,6 +241,35 @@ body { font-family:'Segoe UI', sans-serif; color:#FFFFFF; background:#111; line-
   object-fit: contain;
 }
 
+/* Base class for your custom icons */
+.custom-icon {
+  display: inline-block;
+  width: 1em;   /* Matches current text size */
+  height: 1em;  /* Keeps it square */
+  background-color: currentColor; /* Allows you to change color using 'color: ...' */
+  vertical-align: middle;
+  
+  /* Mask setup */
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+/* Specific class for Power BI */
+.powerbi {
+  -webkit-mask-image: url('https://img.icons8.com/?size=100&id=FQ9NVJuXbDIv&format=png&color=#FFFFFF');
+  mask-image: url('https://img.icons8.com/?size=100&id=FQ9NVJuXbDIv&format=png&color=#FFFFFF');
+}
+
+/* Tableau specific class */
+.tableau {
+  -webkit-mask-image: url('https://img.icons8.com/?size=100&id=BQJc3mm8NGYs&format=png&color=#FFFFFF');
+  mask-image: url('https://img.icons8.com/?size=100&id=BQJc3mm8NGYs&format=png&color=#FFFFFF');
+}
+
 
 
 /* ---------------- FOOTER ---------------- */
